@@ -7,7 +7,7 @@
     <title>Contáctanos</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body id="bodyContactanos">
     <header id="header">
         <img src="../images/logo-deluxe.png" alt="logo-deluxe" class="logoInicio">
         <form action="searchForm" class="barraBusqueda">
@@ -42,19 +42,19 @@
         </nav>
     </header>
     <main id="main">
-        <h1>Contactanos</h1>
-        <form method="post" id="form">
+        <h1 id="tituloContacto">Contactanos</h1>
+        <form method="post" id="formularioContacto">
             <!-- formulario nombre -->
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            <label for="nombre" id="textoNombre">Nombre</label>
+            <input type="text" id="inputNombre" name="nombre" placeholder="Escribe tu nombre" required>
             <!-- formulario correo -->
-            <label for="email">Correo electronico</label>
-            <input type="email" id="email" name="email"placeholder="Escribe tu correo electronico" required>
+            <label for="email" id="textoEmail">Correo electronico</label>
+            <input type="email" id="inputEmail" name="email"placeholder="Escribe tu correo electronico" required>
             <!-- formulario mensaje -->
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="6" required></textarea>
+            <label for="mensaje" id="textoMensaje">Mensaje</label>
+            <textarea id="inputMensaje" name="mensaje" placeholder="Mensaje" rows="6" required></textarea>
             <!-- formulario boton -->
-            <button type="submit">Enviar</button>
+            <button type="submit" id="botonEnviarContacto">Enviar</button>
         </form>
     </main>   
     <footer id="footer">

@@ -41,26 +41,8 @@ a {
     height: 150px;
     flex-wrap: wrap;
     padding-bottom: 20px;
-    z-index: 10;
-}
-/*ESTILOS NavBar*/
-#navBar {
-    display: flex;
-    text-align: center;  
-    justify-content: space-around;
-    flex-direction: row;
-    width: 100%;
-    height: 35px;
-    background-color: #f4f4f4;
-    position: relative;
     z-index: 1000;
-
-}
-#navBar a {
-    display: flex;
-    justify-content: center;
-    margin: 6px;
-    color: black;
+    box-sizing: border-box;
 }
 /* ESTILOS BARRA DE BUSQUEDA*/
 .barraBusqueda {
@@ -108,19 +90,20 @@ a {
     height: 500px;
     width: 100%;
     align-items: center;
-    margin: auto;
+    margin: 0px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     background-image: url(../images/fondo-banners.png);
+    overflow: hidden;
 }
 .carousel-inner{
     display: flex;
     justify-self: center;
     overflow: hidden;
-    height: 400px;
+    height: 100%;
     width: auto;
-}
 
+}
 .carousel-control-prev, .carousel-control-next{
     display: flex;
     justify-content: center;
@@ -133,9 +116,10 @@ a {
     border-radius: 25px;
     top: 50%;
 }
-.carousel-item.active{
-    display: flex;
-    justify-content: space-around;
+#carouselExampleIndicators .carousel-item img {
+    width: 752px;       
+    height: 500px;      
+    object-fit: contain; 
 }
 /*ESTILOS CATEGORIAS*/
 #categorias {
@@ -177,11 +161,6 @@ a {
     margin-top: 70px;
     padding: 20px;
     background-color: #dddddd;
-}
-
-/*BORDE DE AYUDA*/
-.borde{
-
 }
 
 /*PAGINA PRODUCTOS*/
@@ -233,18 +212,26 @@ a {
 
 @media (max-width: 765px){
     #bodyIndex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;  
+        justify-items: center;     
         padding: 10px;
         width: 100%;
         margin: 0;
     }
     .headerIndex {
         height: auto; 
-        padding-top: 550px;
+        padding-top: 0px;
         z-index: 10;
+    }
+    #carouselExampleIndicators {
+        height: auto;
+        width: 100%; ;
+    }
+    #carouselExampleIndicators .carousel-item img {
+        width: 100%;       
+        height: auto;      
+        object-fit: cover; 
     }
     #navBar {
         flex-direction: column;

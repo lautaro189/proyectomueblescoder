@@ -320,7 +320,17 @@ a {
     background-attachment: fixed;
     font-family: Arial, sans-serif;
 }
-
+.tituloQuienessomos {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.presentacionQsomos {
+    padding-left: 500px;
+    width: 1400px;
+    font-size: 20px;
+}
 /*MEDIA RESPONSIVE*/
 @media (max-width: 765px){
     #bodyIndex {

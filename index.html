@@ -13,10 +13,10 @@
 </head>
 <body id="bodyIndex" class="borde">
     <header id="header" class="headerIndex">
-        <img src="images/logo-deluxe.png" alt="logo-deluxe" class="logoInicio">
-        <form action="searchForm" class="barraBusqueda">
-            <input type="text" id="barraBusqueda" placeholder="    Buscar" class="inputBusqueda">
-            <button type="submit" id="botonBusqueda" class="botonBusqueda">🔎</button>
+        <img src="images/logo-deluxe.png" alt="logo-deluxe">
+        <form action="searchForm">
+            <input type="text" id="barraBusqueda" placeholder="Buscar">
+            <button type="submit" id="botonBusqueda">🔎</button>
         </form>
         <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 p-0">
             <div class="container-fluid justify-content-center p-0">
@@ -72,51 +72,42 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <section class="cajaSimbolos">
-            <div class="sizeSimbol">
-                <i class="fa-solid fa-tags"></i>
-                <p class="textoSimbolos">Descuentos</p>
-            </div>
-            <div class="sizeSimbol">
-                <i class="fa-solid fa-truck"></i>
-                <p class="textoSimbolos">Envios a todo el pais</p>
-            </div>
-            <div class="sizeSimbol">
-                <i class="fa-regular fa-credit-card"></i>
-                <p class="textoSimbolos">Hasta 12 cuotas sin interes</p>
-            </div>
-            <div class="sizeSimbol">
-                <i class="fa-solid fa-calendar-days"></i>
-                <p class="textoSimbolos">Abierto de lunes a sabados</p>
-            </div>
-            
-        </section>
-        <section id="categorias" class="borde">
-            <div class="card" style="width: 18rem;">
-                <img src="images/categoriamesas.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5>Mesas</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/categoriaplacard.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5>Placards</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/categoriasillas.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5>Sillas</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/categoriasillones.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5>Sillones</h5>
-                </div>
-            </div>
+        <section id="categorias">
+            <figure class="figure">
+                <img src="images/categoriamesas.jpeg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center text-dark">Mesas</figcaption>
+            </figure>
+            <figure class="figure">
+                <img src="images/categoriaplacard.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center text-dark">Placares</figcaption>
+            </figure>
+            <figure class="figure">
+                <img src="images/categoriasillas.jpeg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center text-dark">Sillas</figcaption>
+            </figure>
+            <figure class="figure">
+                <img src="images/categoriasillones.jpeg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption text-center text-dark">Sillones</figcaption>
+            </figure>
         </section>   
+        <section class="cajaSimbolos">
+            <div>
+                <i class="fa-solid fa-tags"></i>
+                <p>Descuentos</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck"></i>
+                <p>Envios a todo el pais</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-credit-card"></i>
+                <p>Hasta 12 cuotas sin interes</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>Abierto de lunes a sabados</p>
+            </div>
+        </section>
     </main>   
     <!-- Pie de pagina -->
     <footer id="footer" class="borde">

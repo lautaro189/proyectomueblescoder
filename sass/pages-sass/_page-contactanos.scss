@@ -1,0 +1,50 @@
+/*PAGINA CONTACTANOS*/
+#formularioContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    font-family: "Work Sans", serif;
+}
+#textoMensaje{
+    padding-top: 10px;
+}
+#inputMensaje {
+    width: 500px;
+    height: 100px;
+}
+#textoEmail {
+    padding-top: 10px;
+}
+#inputEmail {
+    width: 400px;
+}   
+#textoNombre {
+    padding-top: 10px;
+}
+#botonEnviarContacto {
+    width: 100px;
+    height: 40px;
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+#tituloContacto {
+    padding-left: 20px;
+    font-size: 30px;
+}
+#bodyContactanos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Work Sans", serif;
+}

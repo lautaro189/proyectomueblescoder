@@ -1,379 +1,403 @@
+/*PRESETS*/
 /*ESTILOS RESET*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    display: flex;
-    font-size: 15px;
-    padding: 0;
+  display: flex;
+  font-size: 15px;
+  padding: 0;
 }
 
 li {
-    list-style: none;
-    display: flex;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-}   
-/*ESTILOS BODY*/
-#bodyIndex{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-size: cover;
-    position: relative;
-    font-family: "Work Sans", serif;
+  text-decoration: none;
 }
+
 /*ESTILOS HEADER*/
 #header {
-    display: flex;
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-    z-index: 1000;
-    box-sizing: border-box;
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  z-index: 1000;
+  box-sizing: border-box;
+  /*ESTILOS BUSCADOR*/
+  /* ESTILOS LOGO PRINCIPAL*/
 }
-/* ESTILOS BARRA DE BUSQUEDA*/
-.barraBusqueda {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 691px;
-    border-radius: 30px;
+#header form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 691px;
+  border-radius: 30px;
 }
-.inputBusqueda {
-    margin: 0;
-    display: flex;
-    width: 500px;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    height: 40px;
+#header input {
+  margin-left: 0px;
+  display: flex;
+  width: 500px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 40px;
+  text-align: center;
 }
-.botonBusqueda{
-    border: 1px solid black;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    border-radius: 30px ;
+#header button {
+  border: 1px solid black;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  border-radius: 30px;
 }
-/*ESTILOS LOGO PRINCIPAL*/
-.logoInicio {
-    width: 150px; 
-    display: flex;
+#header img {
+  width: 150px;
+  display: flex;
 }
+
 /*ESTILOS MAIN*/
 #main {
-    max-width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-/*ESTILOS CARRUSEL*/
-#carouselExampleIndicators  { 
-    display: flex;
-    justify-content: center;
-    height: 500px;
-    width: 100%;
-    align-items: center;
-    margin: 0px;
-    position: relative;
-    z-index: 0;
-    background-image: url(../images/fondo-banners.png);
-    overflow: hidden;
-}
-.carousel-inner{
-    display: flex;
-    justify-self: center;
-    overflow: hidden;
-    height: 100%;
-    width: auto;
-
-}
-.carousel-control-prev, .carousel-control-next{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(71, 84, 90, 0.582);
-    position: absolute;
-    z-index: 10;
-    border-radius: 25px;
-    top: 50%;
-}
-#carouselExampleIndicators .carousel-item img {
-    width: 752px;       
-    height: 500px;      
-    object-fit: contain; 
-}
-/*ESTILOS CATEGORIAS*/
-#categorias {
-    display: flex;
-    align-content: space-around;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-end;
-    padding-top: 10px;
-
-}
-.imgcategorias{
-    display: flex;
-}
-
-/*ESTILOS SIMBOLOS*/
-
-.cajaSimbolos { 
-    display: flex;
-    justify-content: space-around;
-    padding: 70px;
-    text-align: center;
-
-}
-.sizeSimbol i{
-    font-size: 100px;
-}
-
-.sizeSimbol p{
-    font-size: 15px;
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 /*ESTILOS FOOTER*/
-#footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 70px;
-    padding: 20px;
-    background-color: #dddddd;
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 70px;
+  padding: 20px;
+  background-color: #dddddd;
+}
+
+/*ESTILOS BODY*/
+/*PAGINA INICIO */
+/*ESTILOS BODY*/
+#bodyIndex {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-size: cover;
+  position: relative;
+  font-family: "Work Sans", serif;
+}
+
+/*ESTILOS CARRUSEL*/
+#carouselExampleIndicators {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  align-items: center;
+  margin: 0px;
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/fondo-banners.png);
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-self: center;
+  overflow: hidden;
+  height: 100%;
+  width: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(71, 84, 90, 0.582);
+  position: absolute;
+  z-index: 10;
+  border-radius: 25px;
+  top: 50%;
+}
+
+#carouselExampleIndicators .carousel-item img {
+  width: 752px;
+  height: 500px;
+  object-fit: contain;
+}
+
+/*ESTILOS CATEGORIAS*/
+#categorias {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-top: 100px;
+  font-family: "Work Sans", serif;
+  font-size: 20px;
+}
+#categorias img {
+  display: flex;
+}
+
+/*ESTILOS SIMBOLOS*/
+.cajaSimbolos {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px;
+  text-align: center;
+}
+.cajaSimbolos div i {
+  font-size: 100px;
+}
+.cajaSimbolos p {
+  font-size: 15px;
 }
 
 /*PAGINA PRODUCTOS*/
 /*BODY PRODUCTOS*/
-#bodyProductos{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: "Work Sans", serif;
-
+#bodyProductos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Work Sans", serif;
 }
 
 /*ESTILOS PRODUCTOS*/
 .contenedorProductos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    gap: 25px;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
-.img-thumbnail {
-    padding: 0;
+.contenedorProductos div {
+  text-align: center;
 }
-
-.producto {
-    text-align: center;  
+.contenedorProductos img {
+  padding: 0;
+  width: 500px;
+  height: 500px;
 }
 
 .nombre {
-    justify-content: center;
-    font-size: 20px;
+  justify-content: center;
+  font-size: 20px;
 }
 
 .precio {
-    font-size: 1.3rem;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .textoProductos {
-    padding-left: 50px;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 25px;
+  padding-left: 50px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
-/*PAGINA CONTACTANOS*/
-#formularioContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding: 20px;
-    font-family: "Work Sans", serif;
-}
-#textoMensaje{
-    padding-top: 10px;
-}
-#inputMensaje {
-    width: 500px;
-    height: 100px;
-}
-#textoEmail {
-    padding-top: 10px;
-}
-#inputEmail {
-    width: 400px;
-}   
-#textoNombre {
-    padding-top: 10px;
-}
-#botonEnviarContacto {
-    width: 100px;
-    height: 40px;
-    background-color: #af4c4c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px;
-}
-#tituloContacto {
-    padding-left: 20px;
-    font-size: 30px;
-}
-#bodyContactanos {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: "Work Sans", serif;
-}
 /*PAGINA PROMOCIONES*/
 #bodyPromociones {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: "Work Sans", serif;
-}
-#gridPromociones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2fr);
-    gap: 20px;
-    padding: 20px;
-}
-.promos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.precioTachadoPromo {
-    text-decoration: line-through;
-}
-.precioPromo {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #db0000;
-}
-.cartelOfertas {
-    background-image: linear-gradient(-90deg, rgb(255, 0, 0), rgb(30, 46, 187));
-    color: white;
-    width: fit-content;
-    margin-inline: 18px;
-    padding: 0.25em 0.5em;
-    margin-left: 700px;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Work Sans", serif;
 }
 
-.textoPromociones h1 {
-    padding-left: 30px;
-    font-size: 20px;
+#gridPromociones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2fr);
+  gap: 20px;
+  padding: 20px;
+}
+#gridPromociones div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.precioTachadoPromo {
+  text-decoration: line-through;
+}
+
+.precioPromo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #db0000;
+}
+
+.cartelOfertas {
+  background-image: linear-gradient(-90deg, rgb(255, 0, 0), rgb(30, 46, 187));
+  color: white;
+  width: fit-content;
+  margin-inline: 18px;
+  padding: 0.25em 0.5em;
+  margin-left: 700px;
+  margin-bottom: 20px;
+}
+
+.textoPromociones {
+  padding-left: 30px;
+  font-size: 20px;
 }
 
 /*PAGINA QUIENES SOMOS*/
 #bodyQuienesSomos {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
 }
-.tituloQuienessomos {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-size: 30px;
+
+#sectionQuienessomos h1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 30px;
 }
-.presentacionQsomos {
-    padding-left: 500px;
-    width: 1400px;
-    font-size: 20px;
+#sectionQuienessomos p {
+  padding-left: 500px;
+  width: 1400px;
+  font-size: 20px;
 }
+
+/*PAGINA CONTACTANOS*/
+#formularioContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  font-family: "Work Sans", serif;
+}
+
+#textoMensaje {
+  padding-top: 10px;
+}
+
+#inputMensaje {
+  width: 500px;
+  height: 100px;
+}
+
+#textoEmail {
+  padding-top: 10px;
+}
+
+#inputEmail {
+  width: 400px;
+}
+
+#textoNombre {
+  padding-top: 10px;
+}
+
+#botonEnviarContacto {
+  width: 100px;
+  height: 40px;
+  background-color: #af4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#tituloContacto {
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+#bodyContactanos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Work Sans", serif;
+}
+
+/*RESPONSIVE*/
 /*MEDIA RESPONSIVE*/
-@media (max-width: 765px){
-    #bodyIndex {
-        display: grid;
-        grid-template-columns: 1fr;  
-        justify-items: center;     
-        padding: 0px;
-        width: 100%;
-        margin: 0;
-    }
-    .headerIndex {
-        height: auto; 
-        padding-top: 0px;
-        z-index: 10;
-    }
-    #carouselExampleIndicators {
-        height: auto;
-        width: 100%; ;
-    }
-    #carouselExampleIndicators .carousel-item img {
-        width: 100%;       
-        height: auto;      
-        object-fit: cover; 
-    }
-    #navBar {
-        flex-direction: column;
-        align-items: center;
-        z-index: 1000;
-        position: relative;
-    }
-    .contenedorProductos {
-        grid-template-columns: 1fr 1fr; 
-        margin-left: 0; 
-    }
-    
-    .barraBusqueda {
-        padding-right: 60px;
-    }
-    .inputBusqueda {
-        width: 300px;
-        margin-right: 0;
-    }
-    .botonBusqueda {
-        width: 30px;
-    }
+@media (max-width: 765px) {
+  #bodyIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+  }
+  .headerIndex {
+    height: auto;
+    padding-top: 0px;
+    z-index: 10;
+  }
+  #carouselExampleIndicators {
+    height: auto;
+    width: 100%;
+  }
+  #carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  #navBar {
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    position: relative;
+  }
+  .contenedorProductos {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+  }
+  .barraBusqueda {
+    padding-right: 60px;
+  }
+  .inputBusqueda {
+    width: 300px;
+    margin-right: 0;
+  }
+  .botonBusqueda {
+    width: 30px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

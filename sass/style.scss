@@ -1,0 +1,18 @@
+/*PRESETS*/
+
+@import "presets/reset";
+@import "presets/header";
+@import "presets/main";
+@import "presets/footer";
+
+/*ESTILOS BODY*/
+
+@import "pages-sass/_page-inicio";
+@import "pages-sass/_page-productos";
+@import "pages-sass/page-promociones";
+@import "pages-sass/page-quienessomos";
+@import "pages-sass/page-contactanos";
+
+/*RESPONSIVE*/
+
+@import "_responsive"

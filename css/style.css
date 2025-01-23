@@ -1,4 +1,6 @@
 /*PRESETS*/
+/*FUENTES*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /*ESTILOS RESET*/
 * {
   padding: 0;
@@ -86,7 +88,7 @@ a {
   background-color: #dddddd;
 }
 
-/*ESTILOS BODY*/
+/*PAGES*/
 /*PAGINA INICIO */
 /*ESTILOS BODY*/
 #bodyIndex {
@@ -145,8 +147,8 @@ a {
 /*ESTILOS CATEGORIAS*/
 #categorias {
   display: flex;
-  align-content: space-around;
   justify-content: space-around;
+  align-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-end;
@@ -156,19 +158,36 @@ a {
 }
 #categorias img {
   display: flex;
+  width: 400px;
+  height: 270px;
+}
+#categorias div .textoCategorias {
+  display: flex;
+  background-color: gray;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+#categorias div .textoCategorias h5 {
+  color: white;
+}
+#categorias div .textoCategorias p {
+  color: white;
 }
 
 /*ESTILOS SIMBOLOS*/
 .cajaSimbolos {
   display: flex;
   justify-content: space-around;
-  padding: 70px;
+  padding: 50px;
   text-align: center;
+  padding-top: 150px;
 }
 .cajaSimbolos div i {
   font-size: 100px;
 }
 .cajaSimbolos p {
+  padding-top: 20px;
   font-size: 15px;
 }
 
@@ -355,7 +374,7 @@ a {
 
 /*RESPONSIVE*/
 /*MEDIA RESPONSIVE*/
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   #bodyIndex {
     display: grid;
     grid-template-columns: 1fr;
@@ -385,17 +404,22 @@ a {
     position: relative;
   }
   .contenedorProductos {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-left: 0;
   }
-  .barraBusqueda {
+  #header {
+    height: auto;
+    padding-top: 0px;
+    z-index: 10;
+  }
+  #header form {
     padding-right: 60px;
   }
-  .inputBusqueda {
-    width: 300px;
+  #header input {
+    width: auto;
     margin-right: 0;
   }
-  .botonBusqueda {
+  #header button {
     width: 30px;
   }
 }

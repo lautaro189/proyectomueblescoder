@@ -1,5 +1,5 @@
 /*MEDIA RESPONSIVE*/
-@media (max-width: 768px){
+@media (max-width: 768px) {
     #bodyIndex {
         display: grid;
         grid-template-columns: 1fr;  
@@ -7,11 +7,6 @@
         padding: 0px;
         width: 100%;
         margin: 0;
-    }
-    .headerIndex {
-        height: auto; 
-        padding-top: 0px;
-        z-index: 10;
     }
     #carouselExampleIndicators {
         height: auto;
@@ -28,23 +23,19 @@
         z-index: 1000;
         position: relative;
     }
-    .contenedorProductos {
-        grid-template-columns: 1fr; 
-        margin-left: 0; 
-    }
     #header {
         height: auto; 
         padding-top: 0px;
         z-index: 10;
-    form {
-        padding-right: 60px;
-    }
-    input {
-        width: auto;
-        margin-right: 0;
-    }
-    button {
-        width: 30px;
-    }
+        form {
+            padding-right: 60px;
+        }
+        input {
+            width: auto;
+            margin-right: 0;
+        }
+        button {
+            width: 30px;
+        }
     }
 }

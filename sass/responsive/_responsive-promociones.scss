@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+    #bodyPromociones {
+        display: grid;
+        grid-template-columns: 1fr;  
+        justify-items: center;     
+        padding: 0px;
+        width: 100%;
+        margin: 0;
+    }
+    #mainPromociones {
+        display: grid;
+        grid-template-columns: 1fr;  
+        justify-items: center;
+        width: 100%;     
+        
+        div {
+            margin: 0;
+            h1 {
+                padding-bottom: 20px;
+            }
+        }
+    }
+    #gridPromociones {
+        display: grid;
+        grid-template-columns: 1fr;  
+        justify-items: center; 
+    }
+    #header {
+        height: auto; 
+        padding-top: 0px;
+        z-index: 10;
+        form {
+            padding-right: 60px;
+        }
+        input {
+            width: auto;
+            margin-right: 0;
+        }
+        button {
+            width: 30px;
+        }
+    }
+}

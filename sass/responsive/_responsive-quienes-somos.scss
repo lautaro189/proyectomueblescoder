@@ -1,0 +1,15 @@
+/*MEDIA RESPONSIVE*/
+@media (max-width: 768px){
+    #bodyQuienesSomos {
+    display: grid;
+    grid-template-columns: 1fr; 
+    }
+    #sectionQuienessomos{
+        padding: 0;
+        
+        p{
+            padding-left: 150px;
+            width: 650px;
+        }
+    }
+}

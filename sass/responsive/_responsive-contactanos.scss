@@ -1,0 +1,22 @@
+@media (max-width: 768px){
+    #bodyContactanos{
+        display: flex;
+        
+        #tituloContacto{
+            align-self: center;
+            padding: 0;
+        }
+        #formularioContacto{
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            padding: 0;
+        }
+        #header {
+            height: 140px; 
+            position: relative;
+            justify-content: space-between;
+        }
+    }
+}

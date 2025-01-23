@@ -15,7 +15,11 @@
 
 /*RESPONSIVE*/
 
-@use "responsive";
+@use "responsive/responsive-inicio";
+@use "responsive/responsive-productos";
+@use "responsive/responsive-promociones";
+@use "responsive/responsive-quienes-somos";
+@use "responsive/responsive-contactanos";
 
 /*FUENTES*/
 

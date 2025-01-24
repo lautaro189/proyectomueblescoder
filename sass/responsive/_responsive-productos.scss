@@ -5,19 +5,21 @@
             grid-template-columns: 1fr; 
             margin-left: 0; 
         }
-        #header {
-            height: auto; 
-            padding-top: 0px;
-            z-index: 10;
-            form {
-                padding-right: 60px;
-            }
+    }
+    #header {
+        height: auto; 
+        padding-top: 0px;
+        z-index: 10;
+
+        .FormBusqueda {
+            padding-right: 60px;
+
             input {
                 width: auto;
                 margin-right: 0;
             }
-            button {
-                width: 30px;
+            #botonBusqueda {
+                width: 55px;
             }
         }
     }

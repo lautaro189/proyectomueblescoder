@@ -11,36 +11,36 @@
     z-index: 1000;
     box-sizing: border-box;
 /*ESTILOS BUSCADOR*/
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 691px;
-    border-radius: 30px;
-}
-input {
-    margin-left: 0px;
-    display: flex;
-    width: 500px;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    height: 40px;
-    text-align: center;
-}
-button {
-    border: 1px solid black;
-    width: 35px;
-    height: 35px;
-    vertical-align: middle;
-    border-radius: 30px ;
-}
-/* ESTILOS LOGO PRINCIPAL*/
-img {
-    width: 150px;
-    display: flex;
-}
+    .FormBusqueda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 691px;
+        border-radius: 30px;
+        input {
+            margin-left: 0px;
+            display: flex;
+            width: 500px;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            height: 40px;
+            text-align: center;
+        }
+        button {
+            border: 1px solid black;
+            width: 35px;
+            height: 35px;
+            vertical-align: middle;
+            border-radius: 30px ;
+        }
+    }
+    /* ESTILOS LOGO PRINCIPAL*/
+    img {
+        width: 150px;
+        display: flex;
+    }
 }
 
 

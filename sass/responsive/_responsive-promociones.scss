@@ -29,15 +29,17 @@
         height: auto; 
         padding-top: 0px;
         z-index: 10;
-        form {
+
+        .FormBusqueda {
             padding-right: 60px;
-        }
-        input {
-            width: auto;
-            margin-right: 0;
-        }
-        button {
-            width: 30px;
+
+            input {
+                width: auto;
+                margin-right: 0;
+            }
+            #botonBusqueda {
+                width: 55px;
+            }
         }
     }
 }

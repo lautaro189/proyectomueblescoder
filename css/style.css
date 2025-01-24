@@ -39,14 +39,14 @@ a {
   /*ESTILOS BUSCADOR*/
   /* ESTILOS LOGO PRINCIPAL*/
 }
-#header form {
+#header .FormBusqueda {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 691px;
   border-radius: 30px;
 }
-#header input {
+#header .FormBusqueda input {
   margin-left: 0px;
   display: flex;
   width: 500px;
@@ -57,7 +57,7 @@ a {
   height: 40px;
   text-align: center;
 }
-#header button {
+#header .FormBusqueda button {
   border: 1px solid black;
   width: 35px;
   height: 35px;
@@ -189,6 +189,16 @@ a {
 .cajaSimbolos p {
   padding-top: 20px;
   font-size: 15px;
+}
+
+.animacionCategorias {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  box-shadow: 0px 0px 0px rgb(0, 0, 0);
+}
+
+.animacionCategorias:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 15px rgb(0, 0, 0);
 }
 
 /*PAGINA PRODUCTOS*/
@@ -398,20 +408,24 @@ a {
     z-index: 1000;
     position: relative;
   }
+  #navBar .navbar-toggler {
+    width: 50px;
+    z-index: 1000;
+  }
   #header {
     height: auto;
     padding-top: 0px;
     z-index: 10;
   }
-  #header form {
+  #header .FormBusqueda {
     padding-right: 60px;
   }
-  #header input {
+  #header .FormBusqueda input {
     width: auto;
     margin-right: 0;
   }
-  #header button {
-    width: 30px;
+  #header .FormBusqueda #botonBusqueda {
+    width: 55px;
   }
 }
 @media (max-width: 768px) {
@@ -420,20 +434,20 @@ a {
     grid-template-columns: 1fr;
     margin-left: 0;
   }
-  #bodyProductos #header {
+  #header {
     height: auto;
     padding-top: 0px;
     z-index: 10;
   }
-  #bodyProductos #header form {
+  #header .FormBusqueda {
     padding-right: 60px;
   }
-  #bodyProductos #header input {
+  #header .FormBusqueda input {
     width: auto;
     margin-right: 0;
   }
-  #bodyProductos #header button {
-    width: 30px;
+  #header .FormBusqueda #botonBusqueda {
+    width: 55px;
   }
 }
 @media (max-width: 768px) {
@@ -467,15 +481,15 @@ a {
     padding-top: 0px;
     z-index: 10;
   }
-  #header form {
+  #header .FormBusqueda {
     padding-right: 60px;
   }
-  #header input {
+  #header .FormBusqueda input {
     width: auto;
     margin-right: 0;
   }
-  #header button {
-    width: 30px;
+  #header .FormBusqueda #botonBusqueda {
+    width: 55px;
   }
 }
 /*MEDIA RESPONSIVE*/
@@ -488,7 +502,8 @@ a {
     padding: 0;
   }
   #sectionQuienessomos p {
-    padding-left: 150px;
+    justify-self: center;
+    padding: 0px;
     width: 650px;
   }
 }

@@ -8,34 +8,44 @@
         width: 100%;
         margin: 0;
     }
+
     #carouselExampleIndicators {
         height: auto;
         width: 100%;
     }
+
     #carouselExampleIndicators .carousel-item img {
         width: 100%;       
         height: auto;      
         object-fit: cover; 
     }
+
     #navBar {
         flex-direction: column;
         align-items: center;
         z-index: 1000;
         position: relative;
+        .navbar-toggler{
+            width: 50px;
+            z-index: 1000;
+        }
     }
+
     #header {
         height: auto; 
         padding-top: 0px;
         z-index: 10;
-        form {
+
+        .FormBusqueda {
             padding-right: 60px;
-        }
-        input {
-            width: auto;
-            margin-right: 0;
-        }
-        button {
-            width: 30px;
+
+            input {
+                width: auto;
+                margin-right: 0;
+            }
+            #botonBusqueda {
+                width: 55px;
+            }
         }
     }
 }

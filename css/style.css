@@ -87,6 +87,34 @@ a {
   padding: 20px;
   background-color: #dddddd;
 }
+#footer .footer-content {
+  margin-bottom: 20px;
+}
+#footer .footer-content .contact-us {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f39c12;
+  text-transform: uppercase;
+}
+#footer .footer-content .contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer-content .contact-info li {
+  font-size: 16px;
+}
+#footer .footer-content .social-links p {
+  font-size: 16px;
+  color: #f39c12;
+  margin: 5px 0;
+}
+#footer .copyright {
+  font-size: 14px;
+  color: #aaa;
+}
 
 /*PAGES*/
 /*PAGINA INICIO */
@@ -380,6 +408,11 @@ a {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Work Sans", serif;
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: column;
 }
 
 /*RESPONSIVE*/

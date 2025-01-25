@@ -48,3 +48,9 @@
     background-attachment: fixed;
     font-family: "Work Sans", serif;
 }
+#footer{
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+}

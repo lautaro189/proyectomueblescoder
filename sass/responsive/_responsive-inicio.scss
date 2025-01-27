@@ -57,3 +57,65 @@
         }
     }
 }
+@media (max-width: 576px) {
+    #bodyIndex {
+        display: grid;
+        grid-template-columns: 1fr;  
+        justify-items: center;     
+        padding: 0px;
+        width: 100%;
+        margin: 0;
+        #header {
+            height: auto; 
+            padding-top: 0px;
+            z-index: 10;
+    
+            .FormBusqueda {
+                padding-right: 30px;
+    
+                input {
+                    width: 90%;
+                    margin-right: 0;
+                }
+                #botonBusqueda {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    #carouselExampleIndicators {
+        height: auto;
+        width: 100%;
+    }
+
+    #carouselExampleIndicators .carousel-item img {
+        width: 100%;       
+        height: auto;      
+        object-fit: cover; 
+    }
+
+    #header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "img FormBusqueda"
+                            "navbar navbar";
+
+        .navbar {
+            grid-area: navbar;
+            width: 100%; 
+            justify-self: center; 
+        }
+    }
+
+    .cajaSimbolos {
+        gap: 30px;
+        padding: 30px;
+        padding-top: 100px;
+        div {
+            width: auto;
+            justify-content: center;
+        }
+    }
+}

@@ -20,3 +20,23 @@
         }
     }
 }
+@media (max-width: 576px) {
+    #bodyContactanos{
+        display: grid;
+        grid-template-columns: 1fr;      
+        width: 100%;
+    }
+    #header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "img FormBusqueda"
+                            "navbar navbar";
+
+        .navbar {
+            grid-area: navbar;
+            width: 100%; 
+            justify-self: center; 
+        }
+    }
+}

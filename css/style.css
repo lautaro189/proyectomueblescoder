@@ -469,6 +469,60 @@ a {
     justify-content: center;
   }
 }
+@media (max-width: 576px) {
+  #bodyIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+  }
+  #bodyIndex #header {
+    height: auto;
+    padding-top: 0px;
+    z-index: 10;
+  }
+  #bodyIndex #header .FormBusqueda {
+    padding-right: 30px;
+  }
+  #bodyIndex #header .FormBusqueda input {
+    width: 90%;
+    margin-right: 0;
+  }
+  #bodyIndex #header .FormBusqueda #botonBusqueda {
+    width: 50px;
+  }
+  #carouselExampleIndicators {
+    height: auto;
+    width: 100%;
+  }
+  #carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "img FormBusqueda" "navbar navbar";
+  }
+  #header .navbar {
+    grid-area: navbar;
+    width: 100%;
+    justify-self: center;
+  }
+  .cajaSimbolos {
+    gap: 30px;
+    padding: 30px;
+    padding-top: 100px;
+  }
+  .cajaSimbolos div {
+    width: auto;
+    justify-content: center;
+  }
+}
 @media (max-width: 768px) {
   #bodyProductos .contenedorProductos {
     display: grid;
@@ -489,6 +543,30 @@ a {
   }
   #header .FormBusqueda #botonBusqueda {
     width: 55px;
+  }
+}
+@media (max-width: 576px) {
+  #bodyProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  #bodyProductos .contenedorProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 10px;
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "img FormBusqueda" "navbar navbar";
+  }
+  #header .navbar {
+    grid-area: navbar;
+    width: 100%;
+    justify-self: center;
   }
 }
 @media (max-width: 768px) {
@@ -533,19 +611,92 @@ a {
     width: 55px;
   }
 }
-/*MEDIA RESPONSIVE*/
-@media (max-width: 768px) {
-  #bodyQuienesSomos {
+@media (max-width: 576px) {
+  #bodyPromociones {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+  }
+  #bodyPromociones #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "img FormBusqueda" "navbar navbar";
+  }
+  #bodyPromociones #header .navbar {
+    grid-area: navbar;
+    width: 100%;
+    justify-self: center;
+  }
+  #mainPromociones {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+  }
+  #mainPromociones div {
+    margin: 0;
+  }
+  #mainPromociones div h1 {
+    padding-bottom: 20px;
+  }
+  #gridPromociones {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+/*MEDIA RESPONSIVE*/
+@media (max-width: 768px) {
+  #bodyQuienessomos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
   #sectionQuienessomos {
     padding: 0;
+    width: 100%;
+    height: auto;
   }
   #sectionQuienessomos p {
     justify-self: center;
     padding: 0px;
-    width: 650px;
+    width: 90%;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  #bodyQuienessomos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+  }
+  #sectionQuienessomos {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  #sectionQuienessomos p {
+    justify-self: center;
+    padding: 0px;
+    width: 300px;
+    height: auto;
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "img FormBusqueda" "navbar navbar";
+  }
+  #header .navbar {
+    grid-area: navbar;
+    width: 100%;
+    justify-self: center;
   }
 }
 @media (max-width: 768px) {
@@ -567,6 +718,24 @@ a {
     height: 140px;
     position: relative;
     justify-content: space-between;
+  }
+}
+@media (max-width: 576px) {
+  #bodyContactanos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "img FormBusqueda" "navbar navbar";
+  }
+  #header .navbar {
+    grid-area: navbar;
+    width: 100%;
+    justify-self: center;
   }
 }
 

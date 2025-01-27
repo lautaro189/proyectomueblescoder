@@ -43,3 +43,44 @@
         }
     }
 }
+@media (max-width: 576px) {
+    #bodyPromociones {
+        display: grid;
+        grid-template-columns: 1fr;  
+        justify-items: center;     
+        padding: 0px;
+        width: 100%;
+        margin: 0;
+        #header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "img FormBusqueda"
+                                "navbar navbar";
+    
+            .navbar {
+                grid-area: navbar;
+                width: 100%; 
+                justify-self: center; 
+            }
+        }
+    }
+    #mainPromociones {
+        display: grid;
+        grid-template-columns: 1fr;  
+        justify-items: center;
+        width: 100%;     
+        
+        div {
+            margin: 0;
+            h1 {
+                padding-bottom: 20px;
+            }
+        }
+    }
+    #gridPromociones {
+        display: grid;
+        grid-template-columns: 1fr;  
+        justify-items: center; 
+    }
+}
